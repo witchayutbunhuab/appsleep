@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepTracker</title>
+</head>
+<body>
+    <h1>บันทึกข้อมูลการนอน</h1>
+    <h2>zZ หายใจเข้าออกเบาๆ ทิ้งไหล่ให้ลู่ลงไปเท่าที่จะทำได้ zZ<h2>
+    <h2>zZ ผ่อนคลายกล้ามเนื้อบนใบหน้าลงไป จนถึงปลายเท้า zZ<h2>
+    <h2>zZ จินตนาการว่าคุณนอนอยู่บนก้อนเมฆ ในท้องฟ้าสีดำ zZ<h2>
+    <h2>zZ บอกกับตัวเองว่า หยุดคิด!! ซ้ำๆ เป็นเวลา 10 วินาที zZ</h2>
+    <form action="addData" method="post">
+        ชื่อ: <input type="text" name="Name"><br/>
+        วันนอน:<select name="afterday" id="afterday">
+            <option value="จันทร์">จันทร์</option>
+            <option value="อังคาร">อังคาร</option>
+            <option value="พุธ">พุธ</option>
+            <option value="พฤหัสบดี">พฤหัสบดี</option>
+            <option value="ศุกร์">ศุกร์</option>
+            <option value="เสาร์">เสาร์</option>
+            <option value="อาทิตย์">อาทิตย์</option>
+        </select><br/>
+        เวลานอน: <input type="time" name="sleepTime"><br/>
+        วันตื่น:
+        <select name="beforday" id="beforday">
+            <option value="จันทร์">จันทร์</option>
+            <option value="อังคาร">อังคาร</option>
+            <option value="พุธ">พุธ</option>
+            <option value="พฤหัสบดี">พฤหัสบดี</option>
+            <option value="ศุกร์">ศุกร์</option>
+            <option value="เสาร์">เสาร์</option>
+            <option value="อาทิตย์">อาทิตย์</option>
+        </select><br/>
+        เวลาตื่น: <input type="time" name="wakeTime"><br/>
+        <input type="hidden" id="user_id" name="user_id" value="1"> 
+        <input type="submit" value="บันทึก">
+    </form>
+</body>
+</html>
